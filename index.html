@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="stylesheet" type="text/css" href="style.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
@@ -19,34 +20,41 @@
 <body>
 
   <div class="wrapper">
-    <div class="box box1">
-      <img src="images/hero-desktop.jpg">
+
+    <div class="container">
+      <div class="box box0">
+        <img src="images/logo.svg" alt="hero" class="logo">
+      </div>
+      <div class="box box1">
+          <img src="images/illustration-mockups.svg" alt="mockup" class="mockup">
+      </div>
+      <div class="box box2">
+        <h1 class="box__heading">Build The Community Your Fans Will Love</h1>
+        <p class="box__desc">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+    Create connections with your users as you engage in genuine discussion. 
+        </p>
+        <div class="button">
+          <a href="#" class="btn">Register</a>
+        </div>
+      </div>
     </div>
-    <div class="box box2">
-      <h1 class="box__heading">Build The Community Your Fans Will Love</h1>
-      <p class="box__desc">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-</p>
-      <a href="" class="btn">Register</a>
-    </div>
+
     <div class="social-icons">
-      <ul>
-        <li class="social-icon"></li>
-        <li class="social-icon"></li>
-        <li class="social-icon"></li>
+      <ul class="si">
+        <li><a href="#" class="social-icon"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#" class="social-icon"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#" class="social-icon"><ion-icon name="logo-instagram"></ion-icon></a></li>
       </ul>
     </div>
+
   </div>
   
-
-  
-
-
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">lukenow.com</a>.
     </p>
   </footer>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
