@@ -41,19 +41,15 @@ For the social icons, you can use a font icon library. Some suggestions can be f
   box-sizing: border-box;
 }
 
-
-body {
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    color: white;
-    
+html {
+  font-size: 100%;
 }
 
-.box__heading {
-  font-family: 'Poppins';
-  font-size: 36px;
-  font-weight: 700;
+body {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;  
 }
 
 .wrapper {
@@ -61,7 +57,7 @@ body {
   background-image: url(images/bg-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: 80vh;
 }
 
 .container {
@@ -71,13 +67,17 @@ body {
   grid-gap: 10px 20px;
   grid-template-columns: 1fr 1fr;
   padding: 50px;
-
 }
 
 .logo {
   width: 100%;
   max-width: 200px;
-  
+}
+
+.box__heading {
+  font-family: 'Poppins';
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 .mockup {
@@ -93,17 +93,15 @@ body {
   padding: 50px;
   grid-gap: 20px;
   grid-template-rows: 1fr 1fr 1fr;
-  justify-content: center;
-  align-content: center;
-  
 }
 
-p {
-  font-size: 18px;
+.box__desc {
+  font-size: 1.2rem;
 }
 
 .btn:link,
 .btn:active {
+  font-size: 1rem;
   background: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
   border-radius: 30px;
@@ -134,14 +132,191 @@ li {
   list-style: none;
   margin-left: 20px;
 }
+
 .si {
   display: flex;
   justify-content: flex-end;
 }
 
-@media (max-width: 500px) {
+footer {
+  background: hsl(257, 40%, 49%);
+  padding: 50px 0px;
+  font-size: 11px; 
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: white;
+  text-decoration-style: none;
+ 
+}
+
+@media (max-width: 1000px) {
+  
+  html {
+    font-size: 90%;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+  
+  .wrapper {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-mobile.svg);
+    background-size: contain;
+    height: 100vh;
+  }
+
   .container {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 3rem;
+  }
+
+  .mockup {
+    margin-bottom: 25px;
+  }
+
+  .box2 {
+    text-align: center;
+    display: grid;
+    padding: 0px;
+    grid-gap: 10px;
     grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+   align-content: center;
+  }
+
+  .box__heading {
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .box__desc {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn:link,
+  .btn:active {
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    border-radius: 30px;
+    padding: 10px 80px;
+    color: hsl(257, 40%, 49%);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.4s;
+  }
+
+  .btn:visited,
+  .btn:hover {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+  }
+
+  .social-icons {
+    max-width: 1440px;
+    padding: 50px;
+    padding-top: 0px;
+    
+  }
+  .si {
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  html {
+    font-size: 100%;
+  }
+
+  body {
+    font-size: 0.9rem;
+  }
+  
+  .wrapper {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-mobile.svg);
+    background-size: contain;
+    height: 70vh;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 3rem;
+  }
+
+  .mockup {
+    margin-bottom: 25px;
+  }
+
+  .box2 {
+    height: 300px;
+    display: grid;
+    padding: 0px;
+    grid-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .box__heading {
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .box__desc {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+
+  .btn:link,
+  .btn:active {
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    border-radius: 30px;
+    padding: 10px 80px;
+    color: hsl(257, 40%, 49%);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.4s;
+    
+  }
+
+  .btn:visited,
+  .btn:hover {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+  }
+
+  .social-icons {
+    max-width: 1440px;
+    padding: 50px;
+    padding-top: 0px;
+    
+  }
+  .si {
+    align-items: flex-start;
+    justify-content: center;
   }
 }
